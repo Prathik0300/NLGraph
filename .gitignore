@@ -1,0 +1,81 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ───────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ── Environment variables ──────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Distribution / packaging ──────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+MANIFEST
+wheels/
+pip-wheel-metadata/
+
+# ── Runtime data (NLGraph-specific) ───────────────────────────────────────
+data/qdrant/
+data/nlgraph.db
+data/nlgraph.db-shm
+data/nlgraph.db-wal
+data/models/setfit/
+
+# Keep the centroid file — it's the output of a long build step.
+# Uncomment the line below if you prefer to rebuild centroids on every clone.
+# data/centroids.npz
+
+# ── HuggingFace model cache ────────────────────────────────────────────────
+# bge-m3 and cross-encoder weights download to ~/.cache/huggingface by default.
+# If MODEL_CACHE_DIR is pointed inside the project, ignore it:
+data/models/
+!data/models/.gitkeep
+
+# ── Logs ──────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Testing ───────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# ── Type checkers ─────────────────────────────────────────────────────────
+.mypy_cache/
+.pytype/
+.pyre/
+
+# ── Editors and IDEs ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Jupyter ───────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Benchmarks / profiling ────────────────────────────────────────────────
+*.prof
+*.lprof

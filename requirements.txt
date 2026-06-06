@@ -1,0 +1,65 @@
+# ── Python version required: 3.11+ ───────────────────────────────────────
+# Python 3.9 is NOT supported — spaCy 3.8+, thinc 8.3+, torch 2.x
+# all require Python 3.10 or higher.
+# Recommended: Python 3.11
+# Install: brew install python@3.11
+# Venv:    python3.11 -m venv venv && source venv/bin/activate
+
+# ── Phrase splitting ──────────────────────────────────────────────────────
+spacy>=3.7,<3.9
+# benepar intentionally excluded: v0.2.0 conflicts with transformers>=4.36
+# (T5Tokenizer API incompatibility). The phrase splitter uses spaCy's
+# transformer-based dependency parser as the primary layer, which is
+# sufficient. Benepar is optional and falls back silently if unavailable.
+
+# ── Embeddings (bge-m3 hybrid: dense + sparse + colbert) ─────────────────
+FlagEmbedding>=1.2
+sentence-transformers>=3.0
+torch>=2.1
+transformers>=4.40
+huggingface-hub>=0.20
+
+# ── Vector DB — global persistent store ──────────────────────────────────
+qdrant-client>=1.9
+
+# ── In-process vector search — blackboard session store ──────────────────
+faiss-cpu>=1.7
+
+# ── Capability classification learning ───────────────────────────────────
+setfit>=1.0
+
+# ── Schemas and data models ───────────────────────────────────────────────
+pydantic>=2.7
+pydantic-settings>=2.3
+
+# ── Database — metadata + performance tracking ────────────────────────────
+sqlmodel>=0.0.19
+
+# ── Graph — DAG construction, topological sort ───────────────────────────
+networkx>=3.3
+
+# ── Serialization ────────────────────────────────────────────────────────
+msgpack>=1.0
+
+# ── Numerics ─────────────────────────────────────────────────────────────
+numpy>=1.26
+
+# ── LLM execution — Ollama HTTP calls ────────────────────────────────────
+httpx>=0.27
+
+# ── CLI display ───────────────────────────────────────────────────────────
+rich>=13.7
+prompt_toolkit>=3.0
+
+# ── Setup tooling ─────────────────────────────────────────────────────────
+tqdm>=4.66
+scikit-learn>=1.4
+
+# ── Async ────────────────────────────────────────────────────────────────
+anyio>=4.0
+
+# ── Dev / testing (optional) ──────────────────────────────────────────────
+# pytest>=8.2
+# pytest-asyncio>=0.23
+# pytest-cov>=5.0
+# scipy>=1.13

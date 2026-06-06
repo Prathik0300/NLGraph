@@ -1,0 +1,83 @@
+{
+  "_comment": "PDTB-derived connective lexicon. Maps discourse connectives to dependency types + confidence.",
+  "_schema": "{ phrase: { type: DependencyType, confidence: float, category: string } }",
+
+  "temporal_succession": {
+    "then": { "type": "sequential", "confidence": 0.92, "category": "temporal" },
+    "after that": { "type": "sequential", "confidence": 0.95, "category": "temporal" },
+    "next": { "type": "sequential", "confidence": 0.88, "category": "temporal" },
+    "subsequently": { "type": "sequential", "confidence": 0.94, "category": "temporal" },
+    "afterward": { "type": "sequential", "confidence": 0.93, "category": "temporal" },
+    "afterwards": { "type": "sequential", "confidence": 0.93, "category": "temporal" },
+    "once done": { "type": "sequential", "confidence": 0.90, "category": "temporal" },
+    "once complete": { "type": "sequential", "confidence": 0.91, "category": "temporal" },
+    "once finished": { "type": "sequential", "confidence": 0.91, "category": "temporal" },
+    "following this": { "type": "sequential", "confidence": 0.89, "category": "temporal" },
+    "following that": { "type": "sequential", "confidence": 0.89, "category": "temporal" },
+    "after completing": { "type": "sequential", "confidence": 0.92, "category": "temporal" },
+    "after finishing": { "type": "sequential", "confidence": 0.92, "category": "temporal" },
+    "after this": { "type": "sequential", "confidence": 0.85, "category": "temporal" },
+    "and then": { "type": "sequential", "confidence": 0.87, "category": "temporal" },
+    "and next": { "type": "sequential", "confidence": 0.86, "category": "temporal" },
+    "in the next step": { "type": "sequential", "confidence": 0.90, "category": "temporal" },
+    "in sequence": { "type": "sequential", "confidence": 0.88, "category": "temporal" },
+    "step by step": { "type": "sequential", "confidence": 0.82, "category": "temporal" },
+    "in order": { "type": "sequential", "confidence": 0.80, "category": "temporal" }
+  },
+
+  "temporal_precedence": {
+    "before": { "type": "prerequisite", "confidence": 0.87, "category": "temporal" },
+    "prior to": { "type": "prerequisite", "confidence": 0.90, "category": "temporal" },
+    "first": { "type": "prerequisite", "confidence": 0.78, "category": "temporal" },
+    "to start": { "type": "prerequisite", "confidence": 0.76, "category": "temporal" },
+    "as a first step": { "type": "prerequisite", "confidence": 0.85, "category": "temporal" },
+    "as a prerequisite": { "type": "prerequisite", "confidence": 0.93, "category": "temporal" },
+    "which requires first": { "type": "prerequisite", "confidence": 0.91, "category": "causal" },
+    "only after": { "type": "prerequisite", "confidence": 0.90, "category": "temporal" },
+    "only when": { "type": "prerequisite", "confidence": 0.85, "category": "conditional" }
+  },
+
+  "causal_prerequisite": {
+    "based on": { "type": "prerequisite", "confidence": 0.85, "category": "causal" },
+    "based on that": { "type": "prerequisite", "confidence": 0.88, "category": "causal" },
+    "informed by": { "type": "prerequisite", "confidence": 0.87, "category": "causal" },
+    "grounded in": { "type": "prerequisite", "confidence": 0.86, "category": "causal" },
+    "building on": { "type": "prerequisite", "confidence": 0.84, "category": "causal" },
+    "leveraging": { "type": "prerequisite", "confidence": 0.80, "category": "causal" },
+    "using this knowledge": { "type": "prerequisite", "confidence": 0.88, "category": "causal" },
+    "with this understanding": { "type": "prerequisite", "confidence": 0.87, "category": "causal" },
+    "given what we know": { "type": "prerequisite", "confidence": 0.85, "category": "causal" },
+    "now that we understand": { "type": "prerequisite", "confidence": 0.86, "category": "causal" }
+  },
+
+  "feeds_into": {
+    "to use in": { "type": "feeds_into", "confidence": 0.88, "category": "causal" },
+    "as input to": { "type": "feeds_into", "confidence": 0.90, "category": "causal" },
+    "which feeds into": { "type": "feeds_into", "confidence": 0.92, "category": "causal" },
+    "for building": { "type": "feeds_into", "confidence": 0.85, "category": "causal" },
+    "to apply in": { "type": "feeds_into", "confidence": 0.84, "category": "causal" },
+    "using the results of": { "type": "feeds_into", "confidence": 0.90, "category": "causal" },
+    "using the output of": { "type": "feeds_into", "confidence": 0.91, "category": "causal" },
+    "so that it can be used": { "type": "feeds_into", "confidence": 0.86, "category": "causal" },
+    "which will be used to": { "type": "feeds_into", "confidence": 0.87, "category": "causal" },
+    "in order to": { "type": "feeds_into", "confidence": 0.83, "category": "causal" },
+    "so as to": { "type": "feeds_into", "confidence": 0.82, "category": "causal" },
+    "to enable": { "type": "feeds_into", "confidence": 0.85, "category": "causal" },
+    "which drives": { "type": "feeds_into", "confidence": 0.83, "category": "causal" },
+    "as the basis for": { "type": "feeds_into", "confidence": 0.86, "category": "causal" }
+  },
+
+  "temporal_synchrony": {
+    "at the same time": { "type": "parallel", "confidence": 0.91, "category": "temporal" },
+    "simultaneously": { "type": "parallel", "confidence": 0.93, "category": "temporal" },
+    "in parallel": { "type": "parallel", "confidence": 0.94, "category": "temporal" },
+    "concurrently": { "type": "parallel", "confidence": 0.93, "category": "temporal" },
+    "alongside": { "type": "parallel", "confidence": 0.88, "category": "temporal" },
+    "at the same time as": { "type": "parallel", "confidence": 0.91, "category": "temporal" },
+    "while also": { "type": "parallel", "confidence": 0.87, "category": "temporal" },
+    "meanwhile": { "type": "parallel", "confidence": 0.84, "category": "temporal" },
+    "at once": { "type": "parallel", "confidence": 0.82, "category": "temporal" },
+    "together with": { "type": "parallel", "confidence": 0.80, "category": "temporal" },
+    "while": { "type": "parallel", "confidence": 0.75, "category": "temporal" }
+  }
+}
