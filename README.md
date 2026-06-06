@@ -1,6 +1,23 @@
-# NLGraph
+```
+███╗   ██╗██╗      ██████╗ ██████╗  █████╗ ██████╗ ██╗  ██╗
+████╗  ██║██║     ██╔════╝ ██╔══██╗██╔══██╗██╔══██╗██║  ██║
+██╔██╗ ██║██║     ██║  ███╗██████╔╝███████║██████╔╝███████║
+██║╚██╗██║██║     ██║   ██║██╔══██╗██╔══██║██╔═══╝ ██╔══██║
+██║ ╚████║███████╗╚██████╔╝██║  ██║██║  ██║██║     ██║  ██║
+╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝
+```
 
-**Query Decomposition and Multi-Agent Orchestration System**
+<div align="center">
+
+**v0.1.0** &nbsp;·&nbsp; Query Decomposition · Multi-Agent Orchestration
+
+*Vector-native &nbsp;·&nbsp; Framework-agnostic &nbsp;·&nbsp; Self-improving*
+
+🔍 Gather &nbsp;&nbsp; 🧠 Analyze &nbsp;&nbsp; 📐 Plan &nbsp;&nbsp; ⚡ Execute &nbsp;&nbsp; ✅ Verify &nbsp;&nbsp; 🔧 Refine &nbsp;&nbsp; 📝 Communicate
+
+</div>
+
+---
 
 NLGraph takes a single complex natural language query, breaks it into semantically coherent phrases, identifies the cognitive work each phrase requires, detects dependencies between those tasks, and coordinates a dynamic team of specialised AI agents to execute the full plan — in parallel where possible, sequentially where required.
 
